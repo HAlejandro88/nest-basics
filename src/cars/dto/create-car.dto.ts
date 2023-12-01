@@ -9,6 +9,6 @@ export class CreateCarDto {
   readonly brand: string;
 
   @IsString()
-  readonly model: string;
+  readonly name: string;
 
 }

@@ -22,7 +22,7 @@ export class CarsController {
   @Post()
   //@UsePipes(ValidationPipe) level endpoint
   createCar(@Body() createCarDto: CreateCarDto) {
-    return createCarDto;
+    return this.carsService.addCar(createCarDto)
   }
 
   @Patch(':id')
